@@ -21,9 +21,23 @@
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 document.addEventListener('deviceready', onDeviceReady, false);
 
+function login(){
+    const usuario = document.getElementById("Usuario").value;
+    const senha = document.getElementById("senhaUsuario").value;
+    if(usuario == "david123" && senha == "123"){
+        console.log("O usuário: ",+usuario+ "foi logado!");
+    }
+    else{
+        console.log("Usuário ou senha incorretos!");
+    }
+}
+
+
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
+    //Login
+
 }
