@@ -108,3 +108,42 @@ h1 {
         background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     }
 }
+body{
+    background: linear-gradient(to right, rgb(233, 72, 8),rgb(253, 237, 4));
+    margin: 30vh auto;
+    justify-content: center;
+}
+p{
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 18px;
+    color: rgb(172, 17, 17);
+
+}
+h1{
+    font-size: 30px;
+    font-family: 'Red Hat Mono', monospace;
+}
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    
+}
+button{
+    height: 35px;
+    display: block;
+    width: 120px;
+    padding: 30 40px;
+    color: white;
+    background-color: red;
+    margin-top: 1vw;
+    border: solid white;
+    border-radius: 25px
+}
+hr{
+    border: solid 1px white;
+    margin-top: 2vw;
+    width: 10vw;
+}

@@ -25,7 +25,7 @@ function login(){
     const usuario = document.getElementById("Usuario").value;
     const senha = document.getElementById("senhaUsuario").value;
     if(usuario == "david123" && senha == "123"){
-        console.log("O usuário: ",+usuario+ "foi logado!");
+        console.log("O usuário: "+usuario+"  foi logado!");
     }
     else{
         console.log("Usuário ou senha incorretos!");

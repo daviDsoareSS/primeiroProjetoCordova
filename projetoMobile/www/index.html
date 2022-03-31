@@ -28,19 +28,22 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <title>Hello World</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap');
+            </style>
     </head>
     <center><body>
             <h1>Login Cordova</h1>
-            <p>Email:</p><input type="text" name="email" id="Usuario">
-            <p>Senha:</p><input type="password" id="senhaUsuario">
-            <button type="button" onclick="login()">OK</button>
+            <p>Email:</p><input type="text" name="email" id="Usuario" placeholder="   Digite seu email...">
+            <hr>
+            <p>Senha:</p><input type="password" id="senhaUsuario" placeholder="   Digite sua senha...">
+            <button type="button" onclick="login();">OK</button>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </body></center>
